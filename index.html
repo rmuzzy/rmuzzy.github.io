@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Bull Performance in F1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="visualization" class="container">
+      <h1>Red Bull Performance in Formula 1 2005-2021</h1>
+      <div class="navigation-buttons">
+        <button class="nav-button" onclick="navigate(-1)">Previous</button>
+        <button class="nav-button" onclick="navigate(1)">Next</button>
+      </div>
+      <div class="slide active-slide" id="scene1">
+        <h2 class="subheader">Overview of Performance</h2>
+        <div id="points-chart"></div>
+        <div id="positions-chart"></div>
+      </div>
+      <div class="slide" id="scene2">
+        <h2 class="subheader">Detailed Race Performance</h2>
+        <div id="significant-races-chart"></div>
+        <div class="dropdown-details-container">
+          <select id="race-dropdown"></select>
+          <div id="race-details"></div>
+        </div>
+      </div>
+      <div class="slide" id="scene3">
+        <h2 class="subheader">Red Bull's Performance on Different Circuits</h2>
+        <div id="redbull-performance-chart"></div>
+      </div>
+      <div class="slide" id="scene4">
+        <h2 class="subheader">Red Bull Driver Contributions Over the Years</h2>
+        <div id="driver-contributions-chart"></div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

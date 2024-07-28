@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.active-slide {
+  display: block;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.axis-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  pointer-events: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.annotation-group {
+  font-size: 12px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.nav-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-anchor: middle;
+}
+
+.axis-title {
+  font-size: 12px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+#points-chart,
+#positions-chart,
+#significant-races-chart,
+#redbull-performance-chart,
+#driver-contributions-chart {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.highlighted-dot {
+  stroke: red;
+  stroke-width: 3px;
+}
+
+#race-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+#race-details {
+  margin-top: 20px;
+}
+
+.subheader {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dropdown-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.annotation-group .annotation-note {
+  text-anchor: middle;
+}
+
+#race-details {
+  text-align: center;
+}
